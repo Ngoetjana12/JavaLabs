@@ -1,7 +1,5 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
 
@@ -30,5 +28,57 @@ public class Main {
         //2.3 Number Analysis
         NumberAnalysis num1 = new NumberAnalysis(15);
         num1.displaySummary();
+
+        //2.4 Login Check
+        String checkedUsername = "admin";
+        String checkedPassword = "123Password";
+
+        LoginCheck lc = new LoginCheck("admin", "123Password");
+
+        if(lc.isValidated(checkedUsername, checkedPassword)){
+            System.out.println("Login Successful");
+        }else{
+            System.out.println("Invalid Credentials");
+        }
+
+        //3.1 Student Marks
+        int[] marks = {50, 50, 50, 50, 50};
+        StudentsArray students = new StudentsArray(marks);
+
+        double totalMarks = students.getTotal(marks);
+        double averageMark = students.getAvg(marks, totalMarks);
+        students.displaySummary(totalMarks, averageMark);
+
+        //3.2 Highest and Lowest Values
+        int[] values = {50, 50, 50, 50, 40, 60};
+
+        HighestAndLowest hl = new HighestAndLowest(values);
+
+        int highest = hl.getLargestValue();
+        int lowest = hl.getSmallestValue();
+        int length = values.length;
+        int count = hl.countAbove50(values);
+        hl.displaySummary(highest, lowest, length, count);
+
+        //3.3 Search an array
+        int[] dice = {1,2,3,4,5,6};
+        int target = 6;
+
+        SearchArray searchDice = new SearchArray(dice);
+
+        int index = searchDice.search(target);
+        searchDice.displaySummary(index);
+
+        //3.4 Even or Odd
+        int[] EvenAndOdd = {2, 4, 6, 7, 9};
+        EvenOdd eo = new EvenOdd(EvenAndOdd);
+
+        int numEven = eo.countEven(EvenAndOdd);
+        int numOdd = eo.countOdd(EvenAndOdd);
+
+        int[] evenNumbers = eo.evenArray(EvenAndOdd, numEven);
+        int[] oddNumbers = eo.oddArray(EvenAndOdd, numOdd);
+
+        eo.displaySummary(numEven, numOdd, evenNumbers, oddNumbers);
     }
 }
