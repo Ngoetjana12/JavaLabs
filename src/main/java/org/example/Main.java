@@ -88,5 +88,11 @@ public class Main {
         boolean isPassed = stud.hasPassed(82);
         stud2.display();
 
+        //4.2 BankAccount Class
+        BankAccount acc = new BankAccount("Thimza", "160965323", 100);
+        acc.deposit(50);
+        acc.getBalance();
+        acc.withdraw(30);
+        acc.getBalance();
     }
 }
