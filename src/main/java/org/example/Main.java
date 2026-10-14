@@ -81,5 +81,12 @@ public class Main {
         ReversedArray rArray = new ReversedArray();
         rArray.reverseArr();
 
+        //4.1 Student Class
+        Student stud = new Student("Thami", "25626222", 82);
+        Student stud2 = new Student("Motsei", "34567893", 85);
+
+        boolean isPassed = stud.hasPassed(82);
+        stud2.display();
+
     }
 }
