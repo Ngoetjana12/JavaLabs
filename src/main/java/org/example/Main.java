@@ -74,5 +74,12 @@ public class Main {
         EvenOdd eo = new EvenOdd(EvenAndOdd);
         eo.count(dice);
 
+        //3.5 Array Reversal
+
+         int[] listofNumbers = {1, 2, 3, 4, 5, 6};
+
+        ReversedArray rArray = new ReversedArray();
+        rArray.reverseArr();
+
     }
 }
