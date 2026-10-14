@@ -72,13 +72,7 @@ public class Main {
         //3.4 Even or Odd
         int[] EvenAndOdd = {2, 4, 6, 7, 9};
         EvenOdd eo = new EvenOdd(EvenAndOdd);
+        eo.count(dice);
 
-        int numEven = eo.countEven(EvenAndOdd);
-        int numOdd = eo.countOdd(EvenAndOdd);
-
-        int[] evenNumbers = eo.evenArray(EvenAndOdd, numEven);
-        int[] oddNumbers = eo.oddArray(EvenAndOdd, numOdd);
-
-        eo.displaySummary(numEven, numOdd, evenNumbers, oddNumbers);
     }
 }

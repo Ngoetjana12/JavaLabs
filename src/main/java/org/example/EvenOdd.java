@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class EvenOdd {
 
     int[] evenOdd;
@@ -10,65 +12,29 @@ public class EvenOdd {
 
         this.evenOdd = evenOdd;
     }
-    public int countEven(int[] evenOdd){
+    public void count(int[] evenOdd){
 
         int numEven = 0;
+        int numOdd = 0;
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
+
         for(int i = 0; i < evenOdd.length; i++){
 
             if(evenOdd[i]%2 == 0){
+                evenNumbers.add(evenOdd[i]);
                 numEven++;
-            }
-        }
-        return numEven;
-    }
-    public int countOdd(int[] evenOdd){
-
-        int numOdd = 0;
-        for(int i = 0; i < evenOdd.length; i++){
-
-            if(evenOdd[i]%2 != 0){
+            }else{
+                oddNumbers.add(evenOdd[i]);
                 numOdd++;
             }
         }
-        return numOdd;
-    }
-    public int[] evenArray(int[] evenOdd, int numEven){
-
-        int[] evenNumbers = new int[numEven];
-        int index = 0;
-
-        for(int i = 0; i < evenOdd.length; i++){
-
-            if(evenOdd[i]%2 == 0){
-
-                evenNumbers[index] = evenOdd[i];
-                index++;
-            }
-        }
-        return evenNumbers;
-    }
-
-    public int[] oddArray(int[] evenOdd, int numOdd){
-
-        int[] oddNumbers = new int[numOdd];
-        int index = 0;
-
-        for(int i = 0; i < evenOdd.length; i++){
-
-            if(evenOdd[i]%2 != 0){
-
-                oddNumbers[index] = evenOdd[i];
-                index++;
-            }
-        }
-        return oddNumbers;
-    }
-
-    public void displaySummary(int numEven, int numOdd, int[] evenNumbers, int[] oddNumbers){
-
         System.out.println("There are " + numEven + " even number");
         System.out.println(evenNumbers);
         System.out.println("There are " + numOdd + " odd number");
         System.out.println(oddNumbers);
     }
+
+
+
 }
