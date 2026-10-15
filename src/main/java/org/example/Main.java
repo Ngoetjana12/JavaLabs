@@ -115,6 +115,31 @@ public class Main {
         rc2.areaCalc();
         rc2.perimeterCalc();
 
+        //5.1 Student Result System
+        int[] makwaMarks = {67, 76, 56};
+        int[] thamiMarks = {46, 49, 70};
+        int[] moMarks = {85, 43, 60};
 
+        StudentSystem studd = new StudentSystem("111", "Makwa", makwaMarks);
+        StudentSystem studd2 = new StudentSystem("222", "Thami", thamiMarks);
+        StudentSystem studd3 = new StudentSystem("333", "Mo", moMarks);
+
+        double avg = studd.calcAvg();
+        studd.determineResult(avg);
+
+        double avg2 = studd2.calcAvg();
+        studd2.determineResult(avg2);
+
+        double avg3 = studd3.calcAvg();
+        studd3.determineResult(avg3);
+
+        //5.1 Determine the student with the highest average
+        double[] avgs = {avg, avg2, avg3};
+
+        StudentSystem ss = new StudentSystem();
+        ss.highestAvg(avgs);
+        ss.countPassed(avgs);
+
+        //5.2 Mini point-of-sale
     }
 }
