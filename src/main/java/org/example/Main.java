@@ -106,5 +106,15 @@ public class Main {
         p.calculateValue();
         p.displayDetails();
 
+        //4.4 Rectangle
+        Rectangle rc = new Rectangle(10, 5);
+        rc.areaCalc();
+        rc.perimeterCalc();
+
+        Rectangle rc2 = new Rectangle(20, 10);
+        rc2.areaCalc();
+        rc2.perimeterCalc();
+
+
     }
 }
