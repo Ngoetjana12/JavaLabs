@@ -1,7 +1,8 @@
 package org.example;
 
 public class Main {
-    static void main() {
+       public static void main(String[] args) {
+
 
         // 1.1 Student Details
         StudentDetails student = new StudentDetails("Naledi", 20, 76.5, true);
@@ -95,6 +96,15 @@ public class Main {
         acc.withdraw(30);
         acc.getBalance();
 
+
+
         //4.3 Product Inventory
+        Product p = new Product("123", "Playstation5", 16000, 3);
+
+        p.addStock();
+        p.reduceStock();
+        p.calculateValue();
+        p.displayDetails();
+
     }
 }
