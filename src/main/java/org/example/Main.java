@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main {
        public static void main(String[] args) {
-
+/*
         // 1.1 Student Details
         StudentDetails student = new StudentDetails("Naledi", 20, 76.5, true);
         student.displaySummary(true);
@@ -173,6 +173,32 @@ public class Main {
            employees.add(emp5);
 
            emp.display(employees);
+*/
+           //6.1 Incorrect String Comparison
+           String first = new String("Java");
+           String second = new String("Java");
 
-    }
+           if (first.equals(second)) {
+               System.out.println("Same text");
+           } else {
+               System.out.println("Different text");
+           }
+
+           //6.2 ArrayIndex
+           int[] numbers = {10, 20, 30};
+
+           for (int i = 0; i < numbers.length; i++) {
+               System.out.println(numbers[i]);
+           }
+
+           //6.3
+           int mark = 85;
+
+           if (mark >= 50 && mark < 80) {
+               System.out.println("Pass");
+           } else if (mark >= 80) {
+               System.out.println("Distinction");
+           }
+
+       }
 }
