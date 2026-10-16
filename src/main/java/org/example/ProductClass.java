@@ -19,6 +19,7 @@ public class ProductClass {
 
         double lineTotal = 0;
         double subTotal = 0;
+        double discounted = 0;
 
         for(int i=0 ; i<product.size(); i++) {
 
@@ -27,5 +28,14 @@ public class ProductClass {
             subTotal = subTotal + lineTotal;
             System.out.println("The subtotal now is R" +subTotal);
         }
+        if(subTotal > 1000){
+
+            discounted = subTotal - (subTotal *0.1);
+            System.out.println("The subtotal qualifies for 10% discount.");
+            System.out.println("The total now is R" + discounted);
+        }
+    }
+    void applyDiscount(){
+
     }
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Main {
        public static void main(String[] args) {
 
-/*
+
         // 1.1 Student Details
         StudentDetails student = new StudentDetails("Naledi", 20, 76.5, true);
         student.displaySummary(true);
@@ -143,8 +143,6 @@ public class Main {
         ss.highestAvg(avgs);
         ss.countPassed(avgs);
 
-        */
-
         //5.2 Mini point-of-sale
 
            ProductClass pd = new ProductClass("Shirt", 50, 3);
@@ -159,6 +157,13 @@ public class Main {
            pros.add(pd4);
 
            pd.calcLine(pros);
+
+
+           Employee emp = new Employee("1111", "Thami", 10000);
+           Employee emp2 = new Employee("2222", "Thabi", 15000);
+           Employee emp3 = new Employee("3333", "Mo", 20000);
+           Employee emp4 = new Employee("4444", "Makwa", 25000);
+           Employee emp5 = new Employee("5555", "Skari", 30000);
 
     }
 }
