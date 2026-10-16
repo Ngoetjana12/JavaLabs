@@ -1,9 +1,12 @@
 package org.example;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
        public static void main(String[] args) {
 
-
+/*
         // 1.1 Student Details
         StudentDetails student = new StudentDetails("Naledi", 20, 76.5, true);
         student.displaySummary(true);
@@ -140,6 +143,22 @@ public class Main {
         ss.highestAvg(avgs);
         ss.countPassed(avgs);
 
+        */
+
         //5.2 Mini point-of-sale
+
+           ProductClass pd = new ProductClass("Shirt", 50, 3);
+           ProductClass pd2 = new ProductClass("iPhone17 Pro", 120, 1);
+           ProductClass pd3 = new ProductClass("GTA6", 100,4);
+           ProductClass pd4 = new ProductClass("Nike Tn", 150, 5);
+
+           ArrayList<ProductClass> pros = new ArrayList<>();
+           pros.add(pd);
+           pros.add(pd2);
+           pros.add(pd3);
+           pros.add(pd4);
+
+           pd.calcLine(pros);
+
     }
 }
