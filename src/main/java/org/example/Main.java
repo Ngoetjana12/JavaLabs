@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Main {
        public static void main(String[] args) {
 
-
         // 1.1 Student Details
         StudentDetails student = new StudentDetails("Naledi", 20, 76.5, true);
         student.displaySummary(true);
@@ -159,11 +158,21 @@ public class Main {
            pd.calcLine(pros);
 
 
-           Employee emp = new Employee("1111", "Thami", 10000);
+           Employee emp = new Employee("1111", "Thami", 9000);
            Employee emp2 = new Employee("2222", "Thabi", 15000);
            Employee emp3 = new Employee("3333", "Mo", 20000);
            Employee emp4 = new Employee("4444", "Makwa", 25000);
            Employee emp5 = new Employee("5555", "Skari", 30000);
+
+           ArrayList<Employee> employees = new ArrayList<>();
+
+           employees.add(emp);
+           employees.add(emp2);
+           employees.add(emp3);
+           employees.add(emp4);
+           employees.add(emp5);
+
+           emp.display(employees);
 
     }
 }
